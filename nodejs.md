@@ -11,3 +11,13 @@
 ##写入文件
 *使用writeFile()方法异步写入文件第二个参数err=>{};
 *写入文件也有同步的版本writeFileSync
+
+4.nodejs WEB 模块:
+##搭建服务器
+*导包var http = require('http')
+*创建一个服务器实例: var server = http.createServer()
+*注册请求时候的回调:
+server.on('request',function(){
+    console.log("收到请求了");
+})
+*监听端口:server.listen(8852)
