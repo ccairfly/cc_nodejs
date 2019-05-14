@@ -3,17 +3,19 @@
 
 2.重点:node是javascript的一个运行环境,浏览器不认识node代码,文件名不能起成node.js.浏览器中的javascript不具有操作文件的能力,但是node可以
 
+
 3.nodejs中的文件系统:
-##读取文件
+####读取文件
 *导入var fs = require("fs")
 *使用readFile()异步读取文件第二个参数为(err,data)=>{};
 *使用readFileSync()方法同步读取文件 直接返回读取到的数据 var syncdata = fs.readFileSync('./data/3344.txt')
-##写入文件
+####写入文件
 *使用writeFile()方法异步写入文件第二个参数err=>{};
 *写入文件也有同步的版本writeFileSync
 
+
 4.nodejs WEB 模块:
-##搭建服务器
+####搭建服务器
 *导包var http = require('http')
 *创建一个服务器实例: var server = http.createServer()
 *注册请求时候的回调:
@@ -21,3 +23,8 @@ server.on('request',function(){
     console.log("收到请求了");
 })
 *监听端口:server.listen(8852)
+####服务器响应数据
+*接收请求的数据
+req和res 请求和响应,结合fs,
+*将html中的数据发送给请求响应,注意'Content-Type',应该设置为html
+res.setHeader('Content-Type', 'text/html; charset=utf-8')
