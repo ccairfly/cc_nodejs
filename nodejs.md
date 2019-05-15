@@ -28,3 +28,11 @@ server.on('request',function(){
 req和res 请求和响应,结合fs,
 *将html中的数据发送给请求响应,注意'Content-Type',应该设置为html
 res.setHeader('Content-Type', 'text/html; charset=utf-8')
+
+5.模块系统
+####模块导入
+require('...')
+####模块导出
+使用module.exports导出
+一般导出对象,或者构造函数exports是每个模块都有的对象,可以往对象添加成员或者方法
+或者直接导出构造函数
