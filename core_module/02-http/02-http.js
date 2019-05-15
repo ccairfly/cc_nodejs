@@ -12,7 +12,7 @@ server.on('request',function(request,response){
     if(url == '/') {
         response.end("hello please go home")
     } else if(url == '/home')  {
-        fs.readFile('./src/index.html',(err,data)=>{
+        fs.readFile('../src/index.html',(err,data)=>{
             if(err){
                 response.end("404 not found")
             } else {
