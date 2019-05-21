@@ -36,3 +36,14 @@ require('...')
 使用module.exports导出
 一般导出对象,或者构造函数exports是每个模块都有的对象,可以往对象添加成员或者方法
 或者直接导出构造函数
+
+6.path模块
+用于格式化或拼接一个完整的路径
+常用:
+1) path.join(__dirname,xx)	拼接路径
+2) path.extname(xxx) 获取后缀名
+3) var pathobj = path.parse(xxx)	常用,将路径解析成对象
+
+7.url模块
+用于解析网址url
+常用var urlobj = url.parse(xxx) 获取url对象
