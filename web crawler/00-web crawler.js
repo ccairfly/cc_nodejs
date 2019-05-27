@@ -8,18 +8,14 @@ http.get('http://www.nipic.com/photo/jingguan/shanshui/index.html',(data)=>{
     })
     data.on('end',()=>{
         // console.log('数据接收结束');
-        // console.log(alldata);
         //正则表达式匹配出
-        var mostr = /data-src=".+?.jpg"/
+        var mostr = /data-src=".+.jpg"/g
         var textarr = []
-        var text = mostr.exec(alldata)
-        textarr.push(text)
-        var text = mostr.exec(alldata)
-        textarr.push(text)
-        var text = mostr.exec(alldata)
-        textarr.push(text)
-        var text = mostr.exec(alldata)
-        textarr.push(text)
+        var text = ''
+        while(text == '' || text != null) {
+            text = mostr.exec(alldata)
+            textarr.push(text)
+        }
         fs.writeFileSync('./out.txt',textarr)
         // console.log(text);
     })
