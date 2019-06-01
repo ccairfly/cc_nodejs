@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#first {
+  height: 100px;
+  background-color: yellowgreen;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+h3 {
+  color: red;
+}
