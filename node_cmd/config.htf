@@ -1,0 +1,47 @@
+version=CSRA68100_CONFIG
+
+file=system3
+
+# The capacitance for driving a crystal providing the raw clock
+XtalLoadCapacitance = 0x0d
+
+# Fine frequency trim for a crystal providing the raw chip clock
+XtalFreqTrim = -12
+
+file=system15
+
+# The capacitance for driving a crystal providing the raw clock
+XtalLoadCapacitance = 0x0d
+
+# Fine frequency trim for a crystal providing the raw chip clock
+XtalFreqTrim = -12
+
+file=bt2
+
+# Bluetooth address
+PSKEY_BDADDR = {0x12ff05 /* lap */ , 0x17 /* uap */ , 0x02 /* nap */ }
+
+# Local device's "user friendly" name
+PSKEY_DEVICE_NAME = "JEET AIR PLUS"
+
+file=bt15
+
+# Local device's "user friendly" name
+PSKEY_DEVICE_NAME = "JEET AIR PLUS R"
+
+# Bluetooth address
+PSKEY_BDADDR = {0x10d1e /* lap */ , 0x45 /* uap */ , 0x48d8 /* nap */ }
+
+file=app3
+
+# License Key for product feature
+FeatureLicenseKey = [ 8c a9 bf 7e 8a aa ba da 8c 15 8c 36 f2 58 b5 c5 45 9e 36 f2 6a 59 de cf b1 a8 27 68 92 44 dd ef ec 05 d4 ed 6d 21 75 a7 38 54 0c f6 9b 80 ae c6 ae ce 64 a4 21 b1 71 5d af a9 e9 80 15 05 d3 e1 ]
+
+# Device product string descriptor
+USBProductString = "QCC3020"
+
+# Device serial number string descriptor
+USBSerialNumberString = "ABCDEF0123456789"
+
+# ReadOnly Customer Key 0
+CustomerReadOnlyKey0 = [ 01 ]
