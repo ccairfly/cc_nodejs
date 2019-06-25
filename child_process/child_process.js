@@ -2,9 +2,7 @@ const { exec } = require('child_process');
 const fs = require('fs')
 
 const readCmd = 'configcmd dev2txt config.htf -usbdbg 1 -system CSRA68100_CONFIG'
-// const readCmd = 'python.exe merge_bin-27.py ./ota_single_boot_2200_1M_190227.bin ./JBL_C230_V0.6_190617-L.bin MER_L.bin'
 const writeCmd = 'configcmd txt2dev config.htf replace -usbdbg 1 -system CSRA68100_CONFIG'
-// const writeCmd = 'python.exe merge_bin-27.py ./ota_single_boot_2200_1M_190227.bin ./JBL_C230_V0.6_190617-R.bin MER_R.bin'
 
 var path = fs.readFileSync('./path.txt').toString()
 
